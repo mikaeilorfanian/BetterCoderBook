@@ -6,5 +6,7 @@
   * [Loose Coupling](loose-coupling.md)
   * [Observer](observer.md)
   * [Decorator](decorator.md)
-* [Factory](factory.md)
+  * [Factory](factory.md)
+
+
 
