@@ -9,5 +9,4 @@
   * [Factory](factory.md)
   * [Adapter](adapter.md)
   * [Template Method](template-method.md)
-* Code Readability
 
