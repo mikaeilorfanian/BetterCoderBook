@@ -4,6 +4,7 @@
 * [Part I. Design Patterns](design-patterns.md)
   * [Composition](composisiton.md)
   * [Loose Coupling](loose-coupling.md)
+  * [Observer](observer.md)
 
 
 
