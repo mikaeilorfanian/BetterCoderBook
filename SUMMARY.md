@@ -7,9 +7,7 @@
   * [Observer](observer.md)
   * [Decorator](decorator.md)
   * [Factory](factory.md)
-  * Adapter
-  * Template Method
+  * [Adapter](adapter.md)
+  * [Template Method](template-method.md)
 * Code Readability
-
-
 
