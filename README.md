@@ -10,6 +10,8 @@ This is a collection of notes and writings on the broad topic of how one can bec
 * SOLID Principles
 * Craftsmanship
 
+Note: if you're not reading this book using GitBook, go [here](https://mikaeilorfanian.gitbooks.io/bettercoder/content/) for a much better reading experience of this book.
+
 # Why This Book
 
 Programming was not my first career choice. I entered the industry at the age of 28 after I discontinued my undergrad studies in Computer Science \(1.5 years into the program\). For a while now, I've been focused on improving as much as I can in as little time as possible. After doing much research and experimentation I've come to the conclusion that knowledge and practice of the above topics is a necessary step for any developer to become a professional and take his/her skills to the next level. Yes, the list is long and it will take you a long time to learn and practice each of these topics. The good news is that I haven't found a more effective way of achieving my goal \(improve as much as possible in as little time as possible\). Hopefully, you'll come to the same conclusion as soon as you put to use what you learn here.
