@@ -6,8 +6,8 @@
   * [Loose Coupling](loose-coupling.md)
   * [Observer](observer.md)
   * [Decorator](decorator.md)
-  * [Factory, Facade](/factory-facade.md)
-  * [Adapter](adapter-facade.md)
+  * Factory
+  * Adapter, Facade
   * [Template Method](template-method.md)
   * [Command](command.md)
 
