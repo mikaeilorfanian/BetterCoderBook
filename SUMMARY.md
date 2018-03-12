@@ -7,7 +7,7 @@
   * [Observer](observer.md)
   * [Decorator](decorator.md)
   * [Factory](factory.md)
-  * [Adapter](adapter.md)
+  * [Adapter](adapter.md), Facade
   * [Template Method](template-method.md)
   * [Command](command.md)
 

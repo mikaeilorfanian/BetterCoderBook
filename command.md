@@ -22,7 +22,7 @@ A Command that executes one or more Commands.
 
 ### HTTP Request as Command Object
 
-How does a HTTP \`GET\` request decouple a client from the server? 
+How does a HTTP \`GET\` request decouple a client from the server?
 
 * Client and server can be anywhere on earth.
 * They can be on different types of machines \(e.g. phone and a server in a server farm\).
@@ -34,7 +34,17 @@ In this context, the Command object is the HTTP request. It knows the receiver a
 
 Can we put the logic of the action taken right into the Command object? Do we always have to have a reference to the Receiver and have the Receiver implement the logic related to an action? In general, it's better to have dumb Commands. You could put the Receiver's logic in a Command\(sacrificing decoupling and forcing you to have a reference to the Receiver\) to make it "smart".
 
+### Queuing Requests Using the Command Pattern
 
+Commands let you package up a piece of computation \(a receiver and a set of actions\) and pass it around as a first-class object. The computation can be invoked at any point in future. It can even be invoked by a different thread or process.
+
+Job Queue: you add Commands on one end and on the other end you have workers that take a Command and call its \`execute\` method and wait for it to exit. Then, they discard the object and take another Command to process it.
+
+### Logging Requests Using the Command Pattern
+
+Some applications require to be recoverable after a crash. We can achieve this by logging all actions. As we execute Commands we save a history of them on disk. In case of a crash we load the Commands and replay them \(execute them\). This is the basis of event sourcing.
+
+Also, you can implement transactions using this technique. A transaction is a set of operations that are all completed or none are. The way you do this is by having a checkpoint for each transaction. First, save all commands in a transaction to disk.Then, load them one-by-one and create a checkpoint after each one is executed. Upon recovering you can continue from the last checkpoint or undo the already executed commands.
 
 
 
