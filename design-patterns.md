@@ -22,14 +22,14 @@ You've been using language X for Y years. But, thinking about and implementing d
 
 ## How to Learn About Design Patterns
 
-If you're totally new to design patterns then start with Head First Design Patterns.   
+If you're totally new to design patterns then start with Head First Design Patterns.  
 The content of this chapter contains many notes from this book and it will be a perfect companion for whatever resource you're using to learn about design patterns. If you already know about design patterns then try to read as many pages from this chapter as you can.
 
-### What This Chapter Is About
+### What This Part Is About
 
-Examples of patterns' usage in popular libraries and interesting discussions beyond what you'll usually find in introductory learning material. 
+Examples of patterns' usage in popular libraries and interesting discussions beyond what you'll usually find in introductory learning material.
 
-For example, there are several discussions on how specific patterns can be improved upon using Pythonic coding practices. There will also be some detailed articles about using patterns in complete programs. 
+For example, there are several discussions on how specific patterns can be improved upon using Pythonic coding practices. There will also be some detailed articles about using patterns in complete programs.
 
 Finally, there are some though-provoking sections about how you can use patterns in unexpected ways, sometimes even outside of the programming world!
 
