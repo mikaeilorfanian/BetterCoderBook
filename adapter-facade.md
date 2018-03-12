@@ -1,3 +1,5 @@
+# Adapter
+
 An Adapter sits between a client and a vendor. It receives messages from a client and translates them so they make sense to the vendor.
 
 ## The Flow
