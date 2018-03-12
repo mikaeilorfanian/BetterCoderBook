@@ -10,7 +10,7 @@ This is a collection of notes and writings on the broad topic of how one can bec
 * SOLID Principles
 * Craftsmanship
 
-Note: if you're not reading this book using GitBook, go [here](https://mikaeilorfanian.gitbooks.io/bettercoder/content/) for a much better reading experience of this book.
+_Note: if you're not reading this book using GitBook, go _[_here_](https://mikaeilorfanian.gitbooks.io/bettercoder/content/)_ for a much better reading experience of this book._
 
 # Why This Book
 
