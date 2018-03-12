@@ -58,3 +58,42 @@ They allow clients to make use of new libraries and subsets without changing any
 
 They always convert the interface of what they wrap.
 
+## The Principle of Least Knowledge
+
+Reduce the interactions of objects to a few "close" friends in order to reduce coupling between objects and classes so that changes don't cascade globally but locally.
+
+### Guidelines for the Least Knowledge Principle
+
+Given an object A, its methods should invoke only those methods that belong to
+
+* the object A itself
+* objects passed in as parameters to this object A's methods
+* the objects created by this object A
+* objects that are saved as instance variables of object A
+
+These rules disallow calling methods of objects \(let's say C\) that are returned from calling other methods \(B's methods\). Otherwise, A would be making requests of C object's sub-parts meaning A has knowledge of C's logic.Instead, we should ask B to make those requests for us.
+
+Below is a class that adheres to the above rules:
+
+```python
+class Car:
+    def __init__(self, engine):
+        self.engine = engine
+        
+    def start(self, key):
+        doors = Doors()
+        authorized = key.turns()
+        
+        if authorized:
+            self.engine.start()
+            self.update_dash_display()
+            doors.lock()
+            
+    def update_dash_display(self):
+        pass
+```
+
+### Facade and the Least Knowledge Principle
+
+The client has only one friend: the facade object. 
+

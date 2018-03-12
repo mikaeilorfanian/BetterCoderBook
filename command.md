@@ -46,7 +46,9 @@ Some applications require to be recoverable after a crash. We can achieve this b
 
 Also, you can implement transactions using this technique. A transaction is a set of operations that are all completed or none are. The way you do this is by having a checkpoint for each transaction. First, save all commands in a transaction to disk.Then, load them one-by-one and create a checkpoint after each one is executed. Upon recovering you can continue from the last checkpoint or undo the already executed commands.
 
+### Rabbit MQ vs. Redis Queue\(RQ\)
 
+In [RQ](http://python-rq.org) you have a command object put into redis. Basically, your application code is in redis. That's why when you update code, your old code can still get executed. The command \(or Job in RQ\) knows what to do \(what code to execute\).
 
-
+With RabbitMQ, usually you transfer strings or JSON objects to the receivers and not your source code. In this case the command object is very dumb.
 
