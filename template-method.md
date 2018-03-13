@@ -61,3 +61,13 @@ For example, you can add methods that are treated as tests and others that are n
 
 Or, you can use convenient methods such as asserEqual which become available through inheritance. This creates a soft circular dependency: the test-runner depends on your code and your code depends on the test-runner. However, your code's dependency on unittes is much stronger, i.e. you cannot change the algorithm that unittest uses to set, tear down, and execute tests.
 
+Strategy vs. Template Method
+
+Strategy: define a family of algorithms and make them interchangeable. Each algorithm is encapsulated  meaning a client can use any of those algorithms without having to make any code changes.
+
+Template Method: the intent is to define the outline o an algorithm but let sub-classes do some of the work. It has several implementations of a step, but has control over the structure of the whole algorithm.
+
+Strategy uses composition, but T.M. uses inheritance.
+
+Strategy is better when all steps except one in an algorithm are the same. Also, the sub-classes can use code from the super class.
+

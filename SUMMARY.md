@@ -10,6 +10,5 @@
   * [Adapter, Facade](/adapter-facade.md)
   * [Template Method](template-method.md)
   * [Command](command.md)
-
-
+* [Iterator, Composition](iterator-composition.md)
 
