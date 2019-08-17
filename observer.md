@@ -1,4 +1,4 @@
-# The Observer Pattern
+# Observer
 
 A one-to-many dependency between objects so that when an object changes state all its dependents are notified and updated automatically.
 

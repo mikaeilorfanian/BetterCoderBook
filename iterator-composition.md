@@ -1,4 +1,4 @@
-# Iterator
+# Iterator, Composition
 
 It relies on an interface called Iterator. With this interface you can implement iterators for any collection of objects.
 
@@ -6,7 +6,7 @@ Iterators encapsulate the inner workings of a collection of objects. Then, a loo
 
 This patterns provides a away to access the elements of an aggregate object sequentially without exposing its underlying representation. It places the task of traversal on the iterator object not the aggregate.
 
-![](/assets/iteratorDiagram.svg)
+![](.gitbook/assets/iteratordiagram.svg)
 
 Iterators imply no ordering The underlying collection can be an unordered hashtable. It may even contain duplicates.
 
@@ -21,6 +21,4 @@ Iterators are an integral part of the core Python language. Python has an Iterat
 Design Principle
 
 A class should have only one reason to change. Every responsibility of a class is an area of potential change. More than one responsibility means more than one area of change.
-
-
 

@@ -1,4 +1,4 @@
-# Command Pattern
+# Command
 
 This pattern lets you decouple the requester of an action from the object that performs the action.
 

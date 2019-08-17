@@ -1,12 +1,12 @@
-### **A is composed with B means A and B have a "has a" relationship**
+# Composition
 
-# Introducing Design Principles
+## Introducing Design Principles
 
 You can think of design principles as easy to remember rules that will guide you to write code that's easy to read and maintain. The design principles you'll find in this chapter are from Head First Design Patterns. But, since these principles are more like best practices, you'll often see them referred to by other names.
 
-## Design Principle
+### Design Principle
 
-##### Identify aspects of your application that vary and separate them from what stays the same.
+#### Identify aspects of your application that vary and separate them from what stays the same.
 
 What varies should not affect what does not vary. This way you minimize unintended consequences.
 
@@ -14,9 +14,9 @@ This single principle is the basis of all design patterns and good practices.
 
 The goal of good practices and patterns is to let you build parts of your application that vary independently of other parts of your application.
 
-## Design Principle
+### Design Principle
 
-##### Program to an interface not an implementation. 
+#### Program to an interface not an implementation.
 
 This principle is not that big of a deal in weakly-typed languages like Python where almost everything is programmed to interfaces by the design of the language itself.
 
@@ -28,7 +28,7 @@ An Example
 
 `Animal a = getAnimal(); a.makeSound(); <-- we don't care what type of animal we have, but only that it makes a sound.`
 
-## Design Principle
+### Design Principle
 
 Favor composition over inheritance.
 

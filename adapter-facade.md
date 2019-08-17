@@ -1,4 +1,4 @@
-# Adapter
+# Adapter, Facade
 
 An Adapter sits between a client and a vendor. It receives messages from a client and translates them so they make sense to the vendor.
 
@@ -46,13 +46,13 @@ To use the Facade pattern we create a class or function that simplifies and unif
 
 ## Decorators vs. Adapters
 
-##### Decorator
+**Decorator**
 
 Adds new responsibilities or behavior. Decorators can be nested and they don't know about each other.
 
 They never convert the interface of the object they wrap.
 
-##### Adapters
+**Adapters**
 
 They allow clients to make use of new libraries and subsets without changing any code.
 
@@ -79,21 +79,21 @@ Below is a class that adheres to the above rules:
 class Car:
     def __init__(self, engine):
         self.engine = engine
-        
+
     def start(self, key):
         doors = Doors()
         authorized = key.turns()
-        
+
         if authorized:
             self.engine.start()
             self.update_dash_display()
             doors.lock()
-            
+
     def update_dash_display(self):
         pass
 ```
 
 ### Facade and the Least Knowledge Principle
 
-The client has only one friend: the facade object. 
+The client has only one friend: the facade object.
 
