@@ -8,7 +8,7 @@ description: Read this first
 
 This is a collection of notes and writings on the important topic of Design Patterns. I present a technical definition of each pattern first, then provide non-code examples that clarify how the pattern could be used or is used in some familiar technology.
 
-_Note: if you're not reading this book using GitBook, go here for a much better reading experience of this book._
+  _Note: if you're not reading this book using GitBook, go [here](https://mikaeilorfanian.gitbook.io/design-patterns-with-examples/) for a much better reading experience of this book._
 
 ## Why This Book
 
